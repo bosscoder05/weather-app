@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!--User interaction container-->
+    <div id="userContainer">
+        <h2>O'z hududingizda ob-havo ma'lumotlarini oling!</h2>
+        <p>Faqat shahar nomini  kiriting!</p>
+
+        <!--errorContainer-->
+        <div class="error" id="errorContainer">
+            <span class="close">&times;</span> Iltimos shahar nomini kiriting!
+            <div id="error"></div>
+        </div>
+        <!--/errorContainer-->
+        <input type="text" id="userInput" class="userInput" placeholder="Toshkent" />
+        <button type="button" class="rounded" id="getWeatherButton">Ob-havoni olish</button>
+    </div>
+    <!--Results-->
+    <div class="container resultContainer" id="resultContainer">
+        <div id="results"></div>
+    </div>
+
+    <div class="footer">
+        <h1><a href="https://t.me/abrorkhandev">Abrorkhandev</a></h1>
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>
